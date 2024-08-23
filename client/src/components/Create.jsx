@@ -6,7 +6,7 @@ const Create = () => {
 
   const handleAdd = () => {
     console.log('Task to be added:', task); // Debugging line to check task value
-    axios.post('http://localhost:1337/add', { task: task })
+    axios.post('https://lofer-server-todo.vercel.app/add', { task: task })
       .then(result => console.log('Server response:', result))
       .catch(err => console.log('Error:', err));
   };

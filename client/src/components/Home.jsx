@@ -8,7 +8,7 @@ const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:1337/get')
+    axios.get('https://lofer-server-todo.vercel.app/get')
       .then(result => setTodos(result.data))
       .catch(err => {
         console.error(err);
@@ -19,7 +19,7 @@ const Home = () => {
   const handleEdit = (id) => {
     const newTask = prompt('Enter new task:');
     if (newTask) {
-      axios.put(`http://localhost:1337/update/${id}`, { task: newTask })
+      axios.put(`https://lofer-server-todo.vercel.app/update/${id}`, { task: newTask })
         .then(result => {
           setTodos(todos.map(todo => (todo._id === id ? result.data : todo)));
           console.log('Task updated:', result.data);
@@ -30,7 +30,7 @@ const Home = () => {
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this task?')) {
-      axios.delete(`http://localhost:1337/delete/${id}`)
+      axios.delete(`https://lofer-server-todo.vercel.app/delete/${id}`)
         .then(() => {
           setTodos(todos.filter(todo => todo._id !== id));
           console.log('Task deleted');

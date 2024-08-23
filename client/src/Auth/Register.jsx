@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:1337/api/register', {
+      const response = await axios.post('https://lofer-server-todo.vercel.app/register', {
         name,
         email,
         password,

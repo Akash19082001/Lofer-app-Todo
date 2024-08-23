@@ -11,7 +11,7 @@ const dotenv = require('dotenv');
 dotenv.config(); // Load environment variables
 
 app.use(cors({
-	origin: ["http://localhost:5173"],
+	origin: ["https://lofer-app-todo.vercel.app"],
 	methods: ["GET", "POST", "PUT","DELETE"],
 	credentials: true
 }));
