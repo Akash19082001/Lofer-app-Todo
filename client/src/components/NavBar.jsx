@@ -21,9 +21,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#28231D] p-4">
+    <nav className="bg-[#13110e] p-4">
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="gradient-text text-3xl font-bold">LoferNotes</Link>
+        <Link to="/" className="gradient-text text-3xl font-bold text-red-100">LoferNotes</Link>
         <div className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -74,8 +74,8 @@ const NavBar = () => {
               </>
             ) : (
               <>
-                <Link to="/login" className="lg:px-4 px-2 py-1 lg:font-bold lg:py-2 rounded-l-xl text-white bg-[#82A0D8] hover:bg-black transition" onClick={closeMobileMenu}>Login</Link>
-                <Link to="/register" className="lg:px-4 px-2 py-1 lg:font-bold lg:py-2 text-gray-800 rounded-r-xl bg-[#8DDFCB] hover:bg-white transition" onClick={closeMobileMenu}>SignUp</Link>
+                <Link to="/login" className="lg:px-4 px-2 py-1 lg:font-bold lg:py-2 rounded-l-xl text-white bg-green-800 hover:bg-black transition" onClick={closeMobileMenu}>Login</Link>
+                <Link to="/register" className="lg:px-4 px-2 py-1 lg:font-bold lg:py-2 text-gray-800 rounded-r-xl bg-yellow-600 hover:bg-white transition" onClick={closeMobileMenu}>SignUp</Link>
               </>
             )}
           </div>

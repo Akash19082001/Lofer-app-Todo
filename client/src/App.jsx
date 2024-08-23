@@ -8,6 +8,7 @@ import Login from './Auth/Login'
 import Home from './components/Home'
 import ProtectedRoute from './route/ProtectedRoute'
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,9 @@ function App() {
       </Routes>
     </BrowserRouter>
   )
+  
 }
+
+
 
 export default App

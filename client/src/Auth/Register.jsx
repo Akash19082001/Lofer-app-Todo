@@ -33,8 +33,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 animate-gradient bg-[length:200%_200%] flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl p-6 sm:p-8 space-y-6 bg-white rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-center text-gray-900">Register</h1>
         <form onSubmit={registerUser} className="space-y-4">
           <div>
